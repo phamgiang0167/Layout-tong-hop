@@ -1,0 +1,21 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,CAAC,CAAC;EACA,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,IAAI;AACJ,IAAI,CAAC;EACH,WAAW,EAAE,oBAAoB;CAClC",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/utils/_mixin.scss",
+        "../sass/base/_reset.scss",
+        "../sass/base/_customize.scss",
+        "../sass/components/_button.scss",
+        "../sass/layouts/_header.scss",
+        "../sass/layouts/_footer.scss",
+        "../sass/pages/Home/_carousel.scss",
+        "../sass/pages/Home/_banner.scss",
+        "../sass/pages/Home/_vehicle.scss",
+        "../sass/pages/Home/_feature.scss",
+        "../sass/pages/Home/_discover.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

@@ -1,0 +1,21 @@
+// utils
+@import './utils/variables';
+@import './utils/mixin';
+
+// base
+@import './base/reset';
+@import './base/customize';
+
+// components
+@import './components/button';
+
+// layouts
+@import './layouts/header';
+@import './layouts/footer';
+
+// Pages
+@import './pages/Home/carousel';
+@import './pages/Home/banner';
+@import './pages/Home/vehicle';
+@import './pages/Home/feature';
+@import './pages/Home/discover';
