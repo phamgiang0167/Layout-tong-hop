@@ -2,11 +2,157 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+}
+
+[class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.feature {
+  background-color: whitesmoke;
+  padding: 6rem 2rem;
+}
+
+.feature .feature__card {
+  background-color: #fff;
+  text-align: center;
+  margin: 0.7rem;
+  padding: 3rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .feature .feature__card {
+    margin: 0.8rem;
+    padding: 3rem 1.2rem;
+  }
+}
+
+.feature .feature__card i {
+  color: #00314d;
+  font-size: 75px;
+}
+
+@media screen and (max-width: 768px) {
+  .feature .feature__card i {
+    font-size: 65px;
+  }
+}
+
+.feature .feature__card p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #00314d;
+  margin: 2.9rem 0 1.5rem;
+  min-height: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .feature .feature__card p {
+    font-size: 1.4rem;
+  }
+}
+
+.feature .feature__card button {
+  background: #007cc0;
+  color: white;
+  border: 1px solid #007cc0;
+  border-radius: 1.95rem;
+  padding: 0.8rem 0;
+  width: 10rem;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.feature .feature__card:hover button {
+  background-color: #fff;
+  border: 1px solid #007cc0;
+  color: #007cc0;
+}
+
+.certified {
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.certified .certified__container {
+  padding: 2rem;
+  height: 70vh;
+}
+
+.certified .certified_shop,
+.certified .certified_guides {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+}
+
+.certified .certified_shop p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.certified button {
+  position: absolute;
+  background: transparent;
+  color: #2198DC;
+  border: 0.2rem solid #2198DC;
+  border-radius: 2.5rem;
+  padding: 0.75rem 1.3rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 30px;
+  min-height: 3rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.certified button:hover {
+  background: #2198DC;
+  color: white;
+}
+
+.certified .certified_guides .certified_guides-text {
+  position: absolute;
+  bottom: 90px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.certified .certified_guides .certified_guides-text p, .certified .certified_guides .certified_guides-text h3 {
+  color: white;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.certified .certified_guides .certified_guides-text h3 {
+  font-weight: 600;
+  font-size: 1.6rem;
 }
 /*# sourceMappingURL=main.css.map */
