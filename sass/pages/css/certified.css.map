@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EAEP,UAAU,EAAE,MAAM;CAOnB;;AATH,AAGI,UAHM,CAGN,eAAe,CAAA;EACX,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,+BAA+B;CACpD",
+    "sources": [
+        "../Home/certified.scss"
+    ],
+    "names": [],
+    "file": "certified.css"
+}

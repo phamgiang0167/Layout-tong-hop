@@ -1,0 +1,70 @@
+.certified {
+    background-color: $bg-00;
+    text-align: center;
+    padding: 0 2rem;
+    .certified__container{
+        padding: 2rem;
+        height: 70vh;
+    }
+    
+    .certified_shop,
+    .certified_guides{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .certified_shop{
+        & p {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto;
+            color: white;
+            font-size: 1.4rem;
+        }
+    }
+    button{
+        position: absolute;
+        @include button(transparent, $blue-02, .2rem solid $blue-02, 2.5rem, 0.75rem 1.3rem);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 30px;
+        min-height: 3rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+        transition: all 0.5s;
+        &:hover{
+            background: $blue-02;
+            color: white;
+        }
+    }
+
+    
+
+    .certified_guides{
+        .certified_guides-text{
+            position: absolute;
+            bottom: 90px;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            width: 100%;
+            padding: 0 40px;
+            & p, h3{
+                color: white;
+                margin: 0 auto;
+                font-size: 1.4rem;
+                line-height: 2rem
+            }
+            & h3{
+                font-weight: 600;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

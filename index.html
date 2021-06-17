@@ -1,44 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev3</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Honda</title>
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
-  <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- GG FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./libs/slick/slick.css" />
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <section class="feature">
+      <div class="container-fluid">
+        <div class="row">
+          <div class=" col-md-3 col-6">
+            <div class="feature__card">
+              <i class="fa fa-tools"></i>
+              <p>Build And Price</p>
+              <button>GO</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="feature__card">
+              <i class="fa fa-tag"></i>
+              <p>See Offers</p>
+              <button>GO</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="feature__card">
+              <i class="fa fa-search"></i>
+              <p>Search Inventory</p>
+              <button>GO</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="feature__card">
+              <div class="carddd">
+                <i class="fa fa-calculator"></i>
+                <p>Estimate Payment</p>
+                <button>GO</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
 
-  <!-- GOOGLE FONT -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <section class="certified">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="certified__container">
+              <div class="certified_shop" style="background-image: url(./img/feature-1.jpg);">
+                <button>SHOP CERTIFIED</button>
+                <p>Conditions apply. <a href="">*</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="certified__container">
+              <div class="certified_guides" style="background-image: url(./img/feature-2.jpg);">
+                  <div class="certified_guides-text">
+                    <h3>How-To Videos and Guides</h3>
+                    <p>
+                      Find owner manuals, instructional guides, how-to videos and
+                      helpful links designed to help you make the most of your
+                      Honda.
+                    </p>
+                  </div>
+                  <button>GO</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- BOOTSTRAP -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+    <section class="discover">
+      <div class="container-fluid">
+        <div class="discover__title">
+          <h2>Discover Honda</h2>
+          <p>
+            Explore the world of Honda through our latest news, events and
+            videos.
+          </p>
+        </div>
+        <div class="row">
+          <div class="items col-12 col-md-6 col-lg-4">
+            <div
+              class="
+                card__img
+                d-flex
+                flex-column
+                justify-content-between
+                align-items-center
+              "
+            >
+              <img src="./img/discover-1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Experience Majid Jordan’s H.E.R. Remix
+                </h5>
+                <p class="card-text">
+                  Don’t miss Majid Jordan’s remix of H.E.R.’s Civic Tour
+                  concert, and enter the Honda Civic Tour Sweepstakes* for a
+                  chance to win an all-new Honda Civic.
+                </p>
+              </div>
+              <div>
+                <a href="#" class="btn btn-primary">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="items col-12 col-md-6 col-lg-4">
+            <div
+              class="
+                card__img
+                d-flex
+                flex-column
+                justify-content-between
+                align-items-center
+              "
+            >
+              <img src="./img/discover-2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Fighting COVID-19 Together</h5>
+                <p class="card-text">
+                  Discover how Honda has helped in the fight against COVID-19.
+                  From supporting our customers to donating personal protective
+                  equipment to our healthcare heroes, we’re dedicated to doing
+                  everything we can for our communities.
+                </p>
+              </div>
+              <a href="#" class="btn btn-primary">LEARN MORE</a>
+            </div>
+          </div>
+          <div class="items col-12 col-md-6 col-lg-4">
+            <div
+              class="
+                card__img
+                d-flex
+                flex-column
+                justify-content-between
+                align-items-center
+              "
+            >
+              <img src="./img/discover-3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Honda Awarded Best Value Brand by KBB.com for Seventh
+                  Consecutive Year
+                </h5>
+                <p class="card-text">
+                  This marks the consecutive year that Honda has been honored
+                  with the Best Value Brand award by Kelley Blue Book’s
+                  KBB.com.* The KBB.com editors noted how consistent
+                  “reliability, resale value, and quality” contributed to the
+                  win.
+                </p>
+              </div>
+              <a href="#" class="btn btn-primary">LEARN MORE</a>
+            </div>
+          </div>
+          <div class="items col-12 col-md-6 col-lg-4">
+            <div
+              class="
+                card__img
+                d-flex
+                flex-column
+                justify-content-between
+                align-items-center
+              "
+            >
+              <img src="./img/discover-4.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Get to Know the Redesigned 2021 Accord Hybrid
+                </h5>
+                <p class="card-text">
+                  With its thrilling driving performance and torque, outstanding
+                  fuel-economy ratings* and all the comfort and cargo space
+                  you’ve come to expect from the Accord, the 2021 Accord Hybrid
+                  checks all your boxes and more.
+                </p>
+              </div>
+              <a href="#" class="btn btn-primary">WATCH VIDEO</a>
+            </div>
+          </div>
+          <div class="items col-12 col-md-6 col-lg-4">
+            <div
+              class="
+                card__img
+                d-flex
+                flex-column
+                justify-content-between
+                align-items-center
+              "
+            >
+              <img src="./img/discover-5.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  2021 Accord: One of Car and Driver’s 10Best
+                </h5>
+                <p class="card-text">
+                  The Honda Accord is synonymous with excellence. Which is why
+                  it’s no surprise that the 2021 Accord has been named to Car
+                  and Driver’s 10Best list. This marks the 35th time the Accord
+                  has been awarded such a distinction.
+                </p>
+              </div>
+              <a href="#" class="btn btn-primary">LEARN MORE</a>
+            </div>
+          </div>
+          <div class="items col-12 col-md-6 col-lg-4">
+            <div
+              class="
+                card__img
+                d-flex
+                flex-column
+                justify-content-between
+                align-items-center
+              "
+            >
+              <img src="./img/discover-6.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Honda Sensing®</h5>
+                <p class="card-text">
+                  Learn more about our suite of safety and driver-assistive
+                  technologies designed to alert you to things you might miss
+                  while driving.
+                </p>
+              </div>
+              <a href="#" class="btn btn-primary">LEARN MORE</a>
+            </div>
+          </div>
+        <div class="discover-btn">
+          <a href="#" class="btn btn-primary">MORE NEWS AND EVENTS</a>
+        </div>
+      </div>
+    </section>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <!-- MAIN CSS -->
-  <link rel="stylesheet" href="./css/main.css" />
-</head>
+    <!-- BOOTSTRAP -->
 
-<body>
-  <header></header>
-  <section class="carousel"></section>
-  <section class="banner"></section>
-  <section class="vehicle"></section>
-  <section class="feature"></section>
-  <section class=discover"></section>
-  <footer></footer>
-  
-  <!-- JQUERY -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
 
-  <!-- BOOTSTRAP -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-
-  <!-- MAIN JS -->
-  <script src="./javascript/main.js"></script>
-</body>
-
+    <!-- MAIN JS -->
+    <script src="./javascript/main.js"></script>
+  </body>
 </html>
