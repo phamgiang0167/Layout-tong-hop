@@ -23,12 +23,89 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./libs/slick/slick.css" />
-    <link rel="stylesheet" href="./libs/slick/slick-theme.css" />
+    
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+
+    <section class="vehicle">
+      <div class="vehicle__title">Our Vehicles</div>
+      <div class="vehicle__tab">
+        <a class="tab__item" data-group="car">CAR</a>
+        <a class="tab__item" data-group="suvs">SUVS & CROSSOVERS</a>
+        <a class="tab__item" data-group="minivan">MINIVAN & TRUCK</a>
+        <a class="tab__item" data-group="electrified">ELECTRIFIED</a>
+        <a class="tab__item" data-group="own">PRE-OWNED</a>
+        <a class="tab__item" data-group="future">FUTURE</a>
+      </div>
+      <div class="vehicle__list">
+        <div class="vehicle__group" id="car">
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-1.jpg);">
+          </div>
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-2.jpg);">
+          </div>
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-3.jpg);">
+          </div>
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-4.jpg);">
+          </div>
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-5.jpg);">
+          </div>
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-6.jpg);">
+          </div>
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-7.jpg);">
+          </div>
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-8.jpg);">
+          </div>
+        </div>
+        <div class="vehicle__group" id="suvs">
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-9.jpg);">
+          </div>
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-10.jpg);">
+          </div>
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-11.jpg);">
+          </div>
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-12.jpg);">
+          </div>
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-13.jpg);">
+          </div>
+        </div>
+        <div class="vehicle__group" id="minivan">
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-14.jpg);">
+          </div>
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-15.jpg);">
+          </div>
+        </div>
+        <div class="vehicle__group" id="electrified">
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-16.jpg);">
+          </div>
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-17.jpg);">
+          </div>
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-18.jpg);">
+          </div>
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-19.jpg);">
+          </div>
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-20.jpg);">
+          </div>
+        </div>
+        <div class="vehicle__group" id="own">
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-21.jpg);">
+          </div>
+        </div>
+        <div class="vehicle__group" id="future">
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-22.jpg);">
+          </div>
+          <div class="vehicle__item" style="background-image: url(./img/vehicle-23.jpg);">
+          </div>
+        </div>
+        <button class="nextArrow" onclick="nextSlides()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <button class="prevArrow" onclick="prevSlides()">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+      </div>
+    </section>
     <section class="feature">
       <div class="container-fluid">
         <div class="row">

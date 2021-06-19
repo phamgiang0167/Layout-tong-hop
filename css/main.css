@@ -17,6 +17,146 @@ body {
   padding-left: 0;
 }
 
+@-webkit-keyframes nextSlider {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes nextSlider {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes prevSlider {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes prevSlider {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.vehicle__title {
+  color: #06456a;
+  font-size: 6rem;
+  line-height: 6rem;
+  font-weight: normal !important;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  padding: 3.5rem 2rem 2.5rem;
+}
+
+.vehicle {
+  width: 100%;
+  background-color: whitesmoke;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.vehicle .vehicle__list {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.vehicle .vehicle__list .prevArrow, .vehicle .vehicle__list .nextArrow {
+  z-index: 999;
+  position: absolute;
+  height: 70px;
+  width: 40px;
+  background-color: #fff;
+  overflow: hidden;
+  position: absolute;
+  margin: auto 0;
+  border: white;
+  top: 0;
+  bottom: 0;
+}
+
+.vehicle .vehicle__list .prevArrow i, .vehicle .vehicle__list .nextArrow i {
+  font-size: 3rem;
+  color: #00324f;
+  z-index: 2;
+}
+
+.vehicle .vehicle__list .prevArrow {
+  border-radius: 0 6px 6px 0;
+  left: 0;
+}
+
+.vehicle .vehicle__list .nextArrow {
+  border-radius: 6px 0 0 6px;
+  right: 0;
+}
+
+.vehicle .vehicle__list .vehicle__group {
+  position: absolute;
+  height: 400px;
+}
+
+.vehicle .vehicle__list .vehicle__group .vehicle__item {
+  width: 100vw;
+  height: 500px;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.vehicle .vehicle__tab {
+  width: 1312px;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  padding: 0.2em 0 2em !important;
+  margin: auto;
+}
+
+.vehicle .vehicle__tab .tab__item {
+  text-decoration: none;
+  display: inline-block;
+  color: #00324f;
+  margin: 0 24px;
+  padding: 0;
+  min-height: 3rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.vehicle .vehicle__tab .tab__item.active {
+  color: #2198DC;
+  border-bottom: 5px solid #2198DC;
+}
+
 .feature {
   background-color: whitesmoke;
   padding: 6rem 2rem;
