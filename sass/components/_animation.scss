@@ -1,0 +1,15 @@
+@include keyframes(nextSlider) {
+    from{
+      transform: translateX(100%);
+    }to{
+      transform: translateX(0%);
+    }
+  }
+  
+@include keyframes(prevSlider) {
+  from{
+    transform: translateX(0%);
+  }to{
+    transform: translateX(100%);
+  }
+}
