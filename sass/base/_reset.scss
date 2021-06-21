@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  margin: 0;
+  margin: 0 ;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -15,4 +15,8 @@ body {
 [class*='col-']{
   padding-right:0;
   padding-left:0;
+}
+
+.row{
+  margin: 0
 }

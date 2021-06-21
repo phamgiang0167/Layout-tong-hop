@@ -8,9 +8,10 @@ $blue-01: #007cc0;
 $blue-02: #2198DC;
 $blue-03: #00324f;
 $blue-04: #06456a;
-
+$red-00: #E42525;
 //break points
 $breakpoints: (
+  'x-large': 1200px,
   'large': 1024px,
   'medium': 992px,
   'small': 768px,
