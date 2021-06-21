@@ -5,3 +5,17 @@
     border-radius: $rounded;
     padding: $padding;
 }
+
+
+@mixin button_vehicle($bg, $color, $border, $rounded, $padding) {
+    background: $bg;
+    color: $color;
+    border: $border;
+    border-radius: $rounded;
+    padding: $padding;
+    &:hover{
+        background: $color;
+        color: $bg;
+        border-color: $color;
+    }
+}

@@ -1,352 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev3</title>
 
-    <!-- FONT AWESOME -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev3</title>
 
-    <!-- GG FONT -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- BOOTSTRAP -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    />
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-    <section class="vehicle">
-      <div class="vehicle__title">Our Vehicles</div>
-      <div class="vehicle__tab">
-        <a class="tab__item" data-group="car">CAR</a>
-        <a class="tab__item" data-group="suvs">SUVS & CROSSOVERS</a>
-        <a class="tab__item" data-group="minivan">MINIVAN & TRUCK</a>
-        <a class="tab__item" data-group="electrified">ELECTRIFIED</a>
-        <a class="tab__item" data-group="own">PRE-OWNED</a>
-        <a class="tab__item" data-group="future">FUTURE</a>
-      </div>
-      <div class="vehicle__list">
-        <div class="vehicle__group" id="car">
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-1.jpg);">
+  <!-- GG FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+
+  <section class="vehicle">
+    <div class="vehicle__title">Our Vehicles</div>
+    <div class="vehicle__tab">
+      <a class="tab__item" data-group="car">CAR</a>
+      <a class="tab__item" data-group="suvs">SUVS & CROSSOVERS</a>
+      <a class="tab__item" data-group="minivan">MINIVAN & TRUCK</a>
+      <a class="tab__item" data-group="electrified">ELECTRIFIED</a>
+      <a class="tab__item" data-group="own">PRE-OWNED</a>
+      <a class="tab__item" data-group="future">FUTURE</a>
+    </div>
+    <div class="vehicle__list">
+      <div class="vehicle__group" id="car">
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-1.jpg);">
+          
+          <div class="vehicle__item-count">
+            <span>CARS 1/</span><span>8</span>
           </div>
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-2.jpg);">
-          </div>
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-3.jpg);">
-          </div>
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-4.jpg);">
-          </div>
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-5.jpg);">
-          </div>
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-6.jpg);">
-          </div>
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-7.jpg);">
-          </div>
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-8.jpg);">
-          </div>
-        </div>
-        <div class="vehicle__group" id="suvs">
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-9.jpg);">
-          </div>
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-10.jpg);">
-          </div>
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-11.jpg);">
-          </div>
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-12.jpg);">
-          </div>
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-13.jpg);">
-          </div>
-        </div>
-        <div class="vehicle__group" id="minivan">
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-14.jpg);">
-          </div>
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-15.jpg);">
-          </div>
-        </div>
-        <div class="vehicle__group" id="electrified">
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-16.jpg);">
-          </div>
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-17.jpg);">
-          </div>
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-18.jpg);">
-          </div>
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-19.jpg);">
-          </div>
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-20.jpg);">
-          </div>
-        </div>
-        <div class="vehicle__group" id="own">
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-21.jpg);">
-          </div>
-        </div>
-        <div class="vehicle__group" id="future">
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-22.jpg);">
-          </div>
-          <div class="vehicle__item" style="background-image: url(./img/vehicle-23.jpg);">
-          </div>
-        </div>
-        <button class="nextArrow" onclick="nextSlides()">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-        <button class="prevArrow" onclick="prevSlides()">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-      </div>
-    </section>
-    <section class="feature">
-      <div class="container-fluid">
-        <div class="row">
-          <div class=" col-md-3 col-6">
-            <div class="feature__card">
-              <i class="fa fa-tools"></i>
-              <p>Build And Price</p>
-              <button>GO</button>
+          <div class="vehicle__detail">
+            <div class="vehicle__detail-logo">
+              <img src="./img/vehicle-logo-1.svg" alt="">
             </div>
-          </div>
-          <div class="col-md-3 col-6">
-            <div class="feature__card">
-              <i class="fa fa-tag"></i>
-              <p>See Offers</p>
-              <button>GO</button>
-            </div>
-          </div>
-          <div class="col-md-3 col-6">
-            <div class="feature__card">
-              <i class="fa fa-search"></i>
-              <p>Search Inventory</p>
-              <button>GO</button>
-            </div>
-          </div>
-          <div class="col-md-3 col-6">
-            <div class="feature__card">
-              <div class="carddd">
-                <i class="fa fa-calculator"></i>
-                <p>Estimate Payment</p>
-                <button>GO</button>
+            <p>With three advanced powertrains, a cabin full of technological innovations and Honda Sensing® standard
+              on
+              all trims, the Accord is everything a sedan should be and more. </p>
+            <div class="stats">
+              <div class="vehicle__detail-starting">
+                <div>$24,970</div>
+                <span>STARTING MSRP</span><span>*</span>
               </div>
+              <div class="vehicle__detail-rating">
+                <div>30 / 38</div>
+                <span>CITY/HWY MPG RATING</span><span>*</span>
+              </div>
+            </div>
+            <div class="vehicle__detail-action">
+              <a href=""><span>EXPLORE</span></a>
+              <a href=""><span>BUILD</span></a>
+            </div>
+          </div>
+          <a href="" class="vehicle__action">
+            <span class="link">EXPLORE THE ACCORD FAMILY ></span>
+            <div class="img" style="background-image: url(./img/accord-family-vehicles-2x.png);"></div>
+          </a>
+        </div>
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-2.jpg);">
+        </div>
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-3.jpg);">
+        </div>
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-4.jpg);">
+        </div>
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-5.jpg);">
+        </div>
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-6.jpg);">
+        </div>
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-7.jpg);">
+        </div>
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-8.jpg);">
+        </div>
+      </div>
+      <div class="vehicle__group" id="suvs">
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-9.jpg);">
+        </div>
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-10.jpg);">
+        </div>
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-11.jpg);">
+        </div>
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-12.jpg);">
+        </div>
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-13.jpg);">
+        </div>
+      </div>
+      <div class="vehicle__group" id="minivan">
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-14.jpg);">
+        </div>
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-15.jpg);">
+        </div>
+      </div>
+      <div class="vehicle__group" id="electrified">
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-16.jpg);">
+        </div>
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-17.jpg);">
+        </div>
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-18.jpg);">
+        </div>
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-19.jpg);">
+        </div>
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-20.jpg);">
+        </div>
+      </div>
+      <div class="vehicle__group" id="own">
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-21.jpg);">
+        </div>
+      </div>
+      <div class="vehicle__group" id="future">
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-22.jpg);">
+        </div>
+        <div class="vehicle__item" style="background-image: url(./img/vehicle-23.jpg);">
+        </div>
+      </div>
+      <button class="nextArrow" onclick="nextSlides()">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <button class="prevArrow" onclick="prevSlides()">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+    </div>
+  </section>
+  <section class="feature">
+    <div class="container-fluid">
+      <div class="row">
+        <div class=" col-md-3 col-6">
+          <div class="feature__card">
+            <i class="fa fa-tools"></i>
+            <p>Build And Price</p>
+            <button>GO</button>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="feature__card">
+            <i class="fa fa-tag"></i>
+            <p>See Offers</p>
+            <button>GO</button>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="feature__card">
+            <i class="fa fa-search"></i>
+            <p>Search Inventory</p>
+            <button>GO</button>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="feature__card">
+            <div class="carddd">
+              <i class="fa fa-calculator"></i>
+              <p>Estimate Payment</p>
+              <button>GO</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="certified">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6 col-12">
-            <div class="certified__container">
-              <div class="certified_shop" style="background-image: url(./img/feature-1.jpg);">
-                <button>SHOP CERTIFIED</button>
-                <p>Conditions apply. <a href="">*</a></p>
-              </div>
+  <section class="certified">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <div class="certified__container">
+            <div class="certified_shop" style="background-image: url(./img/feature-1.jpg);">
+              <button>SHOP CERTIFIED</button>
+              <p>Conditions apply. <a href="">*</a></p>
             </div>
           </div>
-          <div class="col-md-6 col-12">
-            <div class="certified__container">
-              <div class="certified_guides" style="background-image: url(./img/feature-2.jpg);">
-                  <div class="certified_guides-text">
-                    <h3>How-To Videos and Guides</h3>
-                    <p>
-                      Find owner manuals, instructional guides, how-to videos and
-                      helpful links designed to help you make the most of your
-                      Honda.
-                    </p>
-                  </div>
-                  <button>GO</button>
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="certified__container">
+            <div class="certified_guides" style="background-image: url(./img/feature-2.jpg);">
+              <div class="certified_guides-text">
+                <h3>How-To Videos and Guides</h3>
+                <p>
+                  Find owner manuals, instructional guides, how-to videos and
+                  helpful links designed to help you make the most of your
+                  Honda.
+                </p>
               </div>
+              <button>GO</button>
             </div>
-            
           </div>
+
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="discover">
-      <div class="container-fluid">
-        <div class="discover__title">
-          <h2>Discover Honda</h2>
-          <p>
-            Explore the world of Honda through our latest news, events and
-            videos.
-          </p>
+  <section class="discover">
+    <div class="container-fluid">
+      <div class="discover__title">
+        <h2>Discover Honda</h2>
+        <p>
+          Explore the world of Honda through our latest news, events and
+          videos.
+        </p>
+      </div>
+      <div class="row">
+        <div class="items col-12 col-md-6 col-lg-4">
+          <div class="
+                card__img
+                d-flex
+                flex-column
+                justify-content-between
+                align-items-center
+              ">
+            <img src="./img/discover-1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                Experience Majid Jordan’s H.E.R. Remix
+              </h5>
+              <p class="card-text">
+                Don’t miss Majid Jordan’s remix of H.E.R.’s Civic Tour
+                concert, and enter the Honda Civic Tour Sweepstakes* for a
+                chance to win an all-new Honda Civic.
+              </p>
+            </div>
+            <div>
+              <a href="#" class="btn btn-primary">LEARN MORE</a>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="items col-12 col-md-6 col-lg-4">
-            <div
-              class="
+        <div class="items col-12 col-md-6 col-lg-4">
+          <div class="
                 card__img
                 d-flex
                 flex-column
                 justify-content-between
                 align-items-center
-              "
-            >
-              <img src="./img/discover-1.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Experience Majid Jordan’s H.E.R. Remix
-                </h5>
-                <p class="card-text">
-                  Don’t miss Majid Jordan’s remix of H.E.R.’s Civic Tour
-                  concert, and enter the Honda Civic Tour Sweepstakes* for a
-                  chance to win an all-new Honda Civic.
-                </p>
-              </div>
-              <div>
-                <a href="#" class="btn btn-primary">LEARN MORE</a>
-              </div>
+              ">
+            <img src="./img/discover-2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Fighting COVID-19 Together</h5>
+              <p class="card-text">
+                Discover how Honda has helped in the fight against COVID-19.
+                From supporting our customers to donating personal protective
+                equipment to our healthcare heroes, we’re dedicated to doing
+                everything we can for our communities.
+              </p>
             </div>
+            <a href="#" class="btn btn-primary">LEARN MORE</a>
           </div>
-          <div class="items col-12 col-md-6 col-lg-4">
-            <div
-              class="
+        </div>
+        <div class="items col-12 col-md-6 col-lg-4">
+          <div class="
                 card__img
                 d-flex
                 flex-column
                 justify-content-between
                 align-items-center
-              "
-            >
-              <img src="./img/discover-2.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Fighting COVID-19 Together</h5>
-                <p class="card-text">
-                  Discover how Honda has helped in the fight against COVID-19.
-                  From supporting our customers to donating personal protective
-                  equipment to our healthcare heroes, we’re dedicated to doing
-                  everything we can for our communities.
-                </p>
-              </div>
-              <a href="#" class="btn btn-primary">LEARN MORE</a>
+              ">
+            <img src="./img/discover-3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                Honda Awarded Best Value Brand by KBB.com for Seventh
+                Consecutive Year
+              </h5>
+              <p class="card-text">
+                This marks the consecutive year that Honda has been honored
+                with the Best Value Brand award by Kelley Blue Book’s
+                KBB.com.* The KBB.com editors noted how consistent
+                “reliability, resale value, and quality” contributed to the
+                win.
+              </p>
             </div>
+            <a href="#" class="btn btn-primary">LEARN MORE</a>
           </div>
-          <div class="items col-12 col-md-6 col-lg-4">
-            <div
-              class="
+        </div>
+        <div class="items col-12 col-md-6 col-lg-4">
+          <div class="
                 card__img
                 d-flex
                 flex-column
                 justify-content-between
                 align-items-center
-              "
-            >
-              <img src="./img/discover-3.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Honda Awarded Best Value Brand by KBB.com for Seventh
-                  Consecutive Year
-                </h5>
-                <p class="card-text">
-                  This marks the consecutive year that Honda has been honored
-                  with the Best Value Brand award by Kelley Blue Book’s
-                  KBB.com.* The KBB.com editors noted how consistent
-                  “reliability, resale value, and quality” contributed to the
-                  win.
-                </p>
-              </div>
-              <a href="#" class="btn btn-primary">LEARN MORE</a>
+              ">
+            <img src="./img/discover-4.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                Get to Know the Redesigned 2021 Accord Hybrid
+              </h5>
+              <p class="card-text">
+                With its thrilling driving performance and torque, outstanding
+                fuel-economy ratings* and all the comfort and cargo space
+                you’ve come to expect from the Accord, the 2021 Accord Hybrid
+                checks all your boxes and more.
+              </p>
             </div>
+            <a href="#" class="btn btn-primary">WATCH VIDEO</a>
           </div>
-          <div class="items col-12 col-md-6 col-lg-4">
-            <div
-              class="
+        </div>
+        <div class="items col-12 col-md-6 col-lg-4">
+          <div class="
                 card__img
                 d-flex
                 flex-column
                 justify-content-between
                 align-items-center
-              "
-            >
-              <img src="./img/discover-4.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Get to Know the Redesigned 2021 Accord Hybrid
-                </h5>
-                <p class="card-text">
-                  With its thrilling driving performance and torque, outstanding
-                  fuel-economy ratings* and all the comfort and cargo space
-                  you’ve come to expect from the Accord, the 2021 Accord Hybrid
-                  checks all your boxes and more.
-                </p>
-              </div>
-              <a href="#" class="btn btn-primary">WATCH VIDEO</a>
+              ">
+            <img src="./img/discover-5.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                2021 Accord: One of Car and Driver’s 10Best
+              </h5>
+              <p class="card-text">
+                The Honda Accord is synonymous with excellence. Which is why
+                it’s no surprise that the 2021 Accord has been named to Car
+                and Driver’s 10Best list. This marks the 35th time the Accord
+                has been awarded such a distinction.
+              </p>
             </div>
+            <a href="#" class="btn btn-primary">LEARN MORE</a>
           </div>
-          <div class="items col-12 col-md-6 col-lg-4">
-            <div
-              class="
+        </div>
+        <div class="items col-12 col-md-6 col-lg-4">
+          <div class="
                 card__img
                 d-flex
                 flex-column
                 justify-content-between
                 align-items-center
-              "
-            >
-              <img src="./img/discover-5.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">
-                  2021 Accord: One of Car and Driver’s 10Best
-                </h5>
-                <p class="card-text">
-                  The Honda Accord is synonymous with excellence. Which is why
-                  it’s no surprise that the 2021 Accord has been named to Car
-                  and Driver’s 10Best list. This marks the 35th time the Accord
-                  has been awarded such a distinction.
-                </p>
-              </div>
-              <a href="#" class="btn btn-primary">LEARN MORE</a>
+              ">
+            <img src="./img/discover-6.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Honda Sensing®</h5>
+              <p class="card-text">
+                Learn more about our suite of safety and driver-assistive
+                technologies designed to alert you to things you might miss
+                while driving.
+              </p>
             </div>
+            <a href="#" class="btn btn-primary">LEARN MORE</a>
           </div>
-          <div class="items col-12 col-md-6 col-lg-4">
-            <div
-              class="
-                card__img
-                d-flex
-                flex-column
-                justify-content-between
-                align-items-center
-              "
-            >
-              <img src="./img/discover-6.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Honda Sensing®</h5>
-                <p class="card-text">
-                  Learn more about our suite of safety and driver-assistive
-                  technologies designed to alert you to things you might miss
-                  while driving.
-                </p>
-              </div>
-              <a href="#" class="btn btn-primary">LEARN MORE</a>
-            </div>
-          </div>
+        </div>
         <div class="discover-btn">
           <a href="#" class="btn btn-primary">MORE NEWS AND EVENTS</a>
         </div>
       </div>
-    </section>
-    <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </section>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- BOOTSTRAP -->
+  <!-- BOOTSTRAP -->
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
 
-    <!-- MAIN JS -->
-    <script src="./javascript/main.js"></script>
-  </body>
+  <!-- MAIN JS -->
+  <script src="./javascript/main.js"></script>
+</body>
+
 </html>
