@@ -1,23 +1,10 @@
 /**TAB ANIMATION */
 
-let listTabs = document.getElementsByClassName('slick-slide')
+let listTabs = document.getElementsByClassName('tab__item')
 let lengTabs = listTabs.length
-let indexTab = 3
-$('.vehicle__tab').slick({
-    slidesToShow: 7,
-    responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true
-          }
-        },
-      ]
-})
-$(document).on('click', '.slick-next , .slick-prev', (event)=>{
-    if(event.target.classList.contains('slick-next')){
+let indexTab = 0
+$(document).on('click', '.arrow__left , .arrow__right', (event)=>{
+    if(event.target.classList.contains('arrow__right')){
         indexTab++
         if(indexTab == lengTabs){
             indexTab = 0
@@ -29,6 +16,20 @@ $(document).on('click', '.slick-next , .slick-prev', (event)=>{
         }
     }
     $(listTabs[indexTab]).trigger('click')
+
+    if(indexTab < lengTabs - 2){
+        listTabs[indexTab].scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: "center"
+        })
+    }else{
+        listTabs[indexTab].scrollIntoView({
+            behavior: "smooth",
+            block: "end",
+            inline: "end"
+        })
+    }
 })
 
 /** SLIDER ANIMATION */ 

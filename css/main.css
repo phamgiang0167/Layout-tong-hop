@@ -82,14 +82,24 @@ body {
   padding: 3.5rem 2rem 2.5rem;
 }
 
-.vehicle .vehicle__tab {
+.vehicle .vehicle__listTab {
+  position: relative;
+}
+
+.vehicle .vehicle__listTab .vehicle__tab {
   width: 90%;
   text-align: center;
   padding: 0.2em 0 2em !important;
   margin: auto;
+  overflow-x: scroll;
+  white-space: nowrap;
 }
 
-.vehicle .vehicle__tab .tab__item {
+.vehicle .vehicle__listTab .vehicle__tab::-webkit-scrollbar {
+  display: none;
+}
+
+.vehicle .vehicle__listTab .vehicle__tab .tab__item {
   text-decoration: none;
   display: inline-block;
   color: #00324f;
@@ -102,9 +112,24 @@ body {
   font-weight: 600;
 }
 
-.vehicle .vehicle__tab .tab__item.active {
+.vehicle .vehicle__listTab .vehicle__tab .tab__item.active {
   color: #2198DC;
   border-bottom: 5px solid #2198DC;
+}
+
+.vehicle .vehicle__listTab .arrow__left, .vehicle .vehicle__listTab .arrow__right {
+  position: absolute;
+  top: 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.vehicle .vehicle__listTab .arrow__left {
+  left: 10px;
+}
+
+.vehicle .vehicle__listTab .arrow__right {
+  right: 10px;
 }
 
 .vehicle .vehicle__list {
