@@ -16,6 +16,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+  
+  <!-- SLICK  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 
   <!-- CSS -->
   <link rel="stylesheet" href="./css/main.css" />
@@ -25,101 +29,674 @@
 
   <section class="vehicle">
     <div class="vehicle__title">Our Vehicles</div>
-    <div class="vehicle__tab">
-      <a class="tab__item" data-group="car">CAR</a>
-      <a class="tab__item" data-group="suvs">SUVS & CROSSOVERS</a>
-      <a class="tab__item" data-group="minivan">MINIVAN & TRUCK</a>
-      <a class="tab__item" data-group="electrified">ELECTRIFIED</a>
-      <a class="tab__item" data-group="own">PRE-OWNED</a>
-      <a class="tab__item" data-group="future">FUTURE</a>
+    <div class="vehicle__listTab">
+      <div class="vehicle__tab">
+        <a class="tab__item" data-group="car">CAR</a>
+        <a class="tab__item" data-group="suvs">SUVS & CROSSOVERS</a>
+        <a class="tab__item" data-group="minivan">MINIVAN & TRUCK</a>
+        <a class="tab__item" data-group="electrified">ELECTRIFIED</a>
+        <a class="tab__item" data-group="own">PRE-OWNED</a>
+        <a class="tab__item" data-group="future">FUTURE</a>
+      </div>
     </div>
+    
     <div class="vehicle__list">
       <div class="vehicle__group" id="car">
         <div class="vehicle__item" style="background-image: url(./img/vehicle-1.jpg);">
-          
-          <div class="vehicle__item-count">
-            <span>CARS 1/</span><span>8</span>
-          </div>
-          <div class="vehicle__detail">
-            <div class="vehicle__detail-logo">
-              <img src="./img/vehicle-logo-1.svg" alt="">
+          <div class="item__info">
+            <div class="item__count">
+              <span>CARS 1/</span><span>8</span>
             </div>
-            <p>With three advanced powertrains, a cabin full of technological innovations and Honda Sensing® standard
-              on
-              all trims, the Accord is everything a sedan should be and more. </p>
-            <div class="stats">
-              <div class="vehicle__detail-starting">
-                <div>$24,970</div>
-                <span>STARTING MSRP</span><span>*</span>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-1.svg" alt="">
               </div>
-              <div class="vehicle__detail-rating">
-                <div>30 / 38</div>
-                <span>CITY/HWY MPG RATING</span><span>*</span>
+              <p>With three advanced powertrains, a cabin full of technological innovations and Honda Sensing® standard
+                on
+                all trims, the Accord is everything a sedan should be and more. </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$24,970</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>30 / 38</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
               </div>
             </div>
-            <div class="vehicle__detail-action">
-              <a href=""><span>EXPLORE</span></a>
-              <a href=""><span>BUILD</span></a>
-            </div>
+            <a href="" class="vehicle__action">
+              <span class="link">EXPLORE THE ACCORD FAMILY ></span>
+              <div class="img" style="background-image: url(./img/accord-family-vehicles-2x.png);"></div>
+            </a>
           </div>
-          <a href="" class="vehicle__action">
-            <span class="link">EXPLORE THE ACCORD FAMILY ></span>
-            <div class="img" style="background-image: url(./img/accord-family-vehicles-2x.png);"></div>
-          </a>
         </div>
         <div class="vehicle__item" style="background-image: url(./img/vehicle-2.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>CARS 2/</span><span>8</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-2.svg" alt="">
+              </div>
+              <p>Sophisticated on the outside. Tech-forward on the inside. Add efficiency and exhilaration to every
+                drive in the no-compromise Accord Hybrid. </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$26,570</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>48 / 48</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+            <a href="" class="vehicle__action">
+              <span class="link">EXPLORE THE ACCORD FAMILY ></span>
+
+            </a>
+          </div>
         </div>
         <div class="vehicle__item" style="background-image: url(./img/vehicle-3.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>CARS 3/</span><span>8</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-3.svg" alt="">
+              </div>
+              <p>Crank up the fun in the all-new 2022 Civic Sedan, with dramatic new styling, a reconfigured cabin and
+                thrilling performance. </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$21,700</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>31 / 40</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+            <a href="" class="vehicle__action">
+              <span class="link">EXPLORE THE ACCORD FAMILY ></span>
+
+            </a>
+          </div>
         </div>
         <div class="vehicle__item" style="background-image: url(./img/vehicle-4.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>CARS 4/</span><span>8</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-4.svg" alt="">
+              </div>
+              <p>The Civic Hatchback blends distinctive styling and streetwise versatility into an unmistakable
+                five-door package. </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$22,200</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>31 / 40</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+            <a href="" class="vehicle__action">
+              <span class="link">EXPLORE THE ACCORD FAMILY ></span>
+
+            </a>
+          </div>
         </div>
         <div class="vehicle__item" style="background-image: url(./img/vehicle-5.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>CARS 5/</span><span>8</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-5.svg" alt="">
+              </div>
+              <p>The high-performance hatchback is ready to tear up the track. A new Limited Edition trim in Phoenix
+                Yellow adds distinctive styling with 46 pounds of weight-reduction modifications, making it the lightest
+                Civic Type R ever brought to the U.S. </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$37,895</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>22 / 28</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+            <a href="" class="vehicle__action">
+              <span class="link">EXPLORE THE ACCORD FAMILY ></span>
+
+            </a>
+          </div>
         </div>
         <div class="vehicle__item" style="background-image: url(./img/vehicle-6.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>CARS 6/</span><span>8</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-6.svg" alt="">
+              </div>
+              <p>With a 55-mpg city rating, this hybrid is more than just a beautiful ride. It’s also an efficient and
+                environmentally responsible vehicle. </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$25,210</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>55 / 49</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+            <a href="" class="vehicle__action">
+              <span class="link">EXPLORE THE ACCORD FAMILY ></span>
+
+            </a>
+          </div>
         </div>
         <div class="vehicle__item" style="background-image: url(./img/vehicle-7.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>CARS 7/</span><span>8</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-7.svg" alt="">
+              </div>
+              <p>With roomy seating for five adults and a class-leading *47-Mile all-electric Range rating , the Clarity
+                Plug-In Hybrid defines sophistication without compromise.</p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$33,400</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>47 / 340</div>
+                  <span>MILE EPA/COMBINED RANGE RATING*</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+            <a href="" class="vehicle__action">
+              <span class="link">EXPLORE THE CLARITY FAMILY ></span>
+
+            </a>
+          </div>
         </div>
         <div class="vehicle__item" style="background-image: url(./img/vehicle-8.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>CARS 8/</span><span>8</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-8.svg" alt="">
+              </div>
+              <p>Clarity Fuel Cell paves a clear path to the future by making the advanced clean technology of tomorrow
+                available today. </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>Lease Only</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>360</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+            <a href="" class="vehicle__action">
+              <span class="link">EXPLORE THE CLARITY FAMILY ></span>
+
+            </a>
+          </div>
         </div>
       </div>
       <div class="vehicle__group" id="suvs">
         <div class="vehicle__item" style="background-image: url(./img/vehicle-9.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>SUVs & CROSSOVERS 1/</span><span>5</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-9.svg" alt="">
+              </div>
+              <p>With three advanced powertrains, a cabin full of technological innovations and Honda Sensing® standard
+                on
+                all trims, the Accord is everything a sedan should be and more. </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$32,790</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>20 / 25</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="vehicle__item" style="background-image: url(./img/vehicle-10.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>SUVs & CROSSOVERS 2/</span><span>5</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-10.svg" alt="">
+              </div>
+              <p>With sporty exterior styling, a comfortable, adjustable interior and available all-wheel drive, the
+                HR-V is the ideal crossover. </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$21,220</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>28 / 34</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="vehicle__item" style="background-image: url(./img/vehicle-11.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>SUVs & CROSSOVERS 3/</span><span>5</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-11.svg" alt="">
+              </div>
+              <p>The CR-V continues to set the benchmark for crossovers, with modern styling and a turbocharged engine
+                that comes standard on all non-hybrid trims. </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$25,350</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>28 / 34</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="vehicle__item" style="background-image: url(./img/vehicle-12.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>SUVs & CROSSOVERS 4/</span><span>5</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-12.svg" alt="">
+              </div>
+              <p>With three advanced powertrains, a cabin full of technological innovations and Honda Sensing® standard
+                on
+                all trims, the Accord is everything a sedan should be and more. </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$30,560</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>40 / 35</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="vehicle__item" style="background-image: url(./img/vehicle-13.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>SUVs & CROSSOVERS 5/</span><span>5</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-13.svg" alt="">
+              </div>
+              <p>The versatile Pilot is redefining the modern family SUV, with sporty, refined looks, Honda Sensing®
+                standard, and seating for up to eight.</p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$32,550</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>20 / 27</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="vehicle__group" id="minivan">
         <div class="vehicle__item" style="background-image: url(./img/vehicle-14.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>MINIVAN & TRUCK 1/</span><span>2</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-14.svg" alt="">
+              </div>
+              <p>The Odyssey is ready to take on family adventures in style, with a streamlined exterior, refined
+                interior and advanced technology throughout. </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$32,090</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>19 / 28</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="vehicle__item" style="background-image: url(./img/vehicle-15.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>MINIVAN & TRUCK 2/</span><span>2</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-15.svg" alt="">
+              </div>
+              <p>The 2021 Ridgeline introduces a tougher aesthetic to an iconic truck. Its redesigned exterior is a nod
+                to its impressive capability and complements a powerful 280-horsepower </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$36,490</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>18 / 24</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="vehicle__group" id="electrified">
         <div class="vehicle__item" style="background-image: url(./img/vehicle-16.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>ELECTRIFIED 1/</span><span>5</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-16.svg" alt="">
+              </div>
+              <p>Combining crossover versatility, an advanced hybrid powertrain and all-wheel drive, the 2021 CR-V
+                Hybrid blends functionality with driving bliss. </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$30,560</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>40 / 35</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="vehicle__item" style="background-image: url(./img/vehicle-17.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>ELECTRIFIED 2/</span><span>5</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-17.svg" alt="">
+              </div>
+              <p>Sophisticated on the outside. Tech-forward on the inside. Add efficiency and exhilaration to every
+                drive in the no-compromise Accord Hybrid. </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$26,570</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>48 / 48</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="vehicle__item" style="background-image: url(./img/vehicle-18.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>ELECTRIFIED 3/</span><span>5</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-18.svg" alt="">
+              </div>
+              <p>With a 55-mpg city rating, this hybrid is more than just a beautiful ride. It’s also an efficient and
+                environmentally responsible vehicle. </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$25,210</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>55 / 49</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+            <a href="" class="vehicle__action">
+              <span class="link">EXPLORE THE ELECTRIFIED FAMILY ></span>
+
+            </a>
+          </div>
         </div>
         <div class="vehicle__item" style="background-image: url(./img/vehicle-19.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>ELECTRIFIED 4/</span><span>8</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-19.svg" alt="">
+              </div>
+              <p>With a 55-mpg city rating, this hybrid is more than just a beautiful ride. It’s also an efficient and
+                environmentally responsible vehicle. </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>$24,970</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>47 / 340</div>
+                  <span>MILE EPA/COMBINED RANGE RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+            <a href="" class="vehicle__action">
+              <span class="link">EXPLORE THE CLARITY FAMILY ></span>
+
+            </a>
+          </div>
         </div>
         <div class="vehicle__item" style="background-image: url(./img/vehicle-20.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>ELECTRIFIED 5/</span><span>5</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-20.svg" alt="">
+              </div>
+              <p>Clarity Fuel Cell paves a clear path to the future by making the advanced clean technology of tomorrow
+                available today. </p>
+              <div class="item__detail-stats">
+                <div class="stats__starting">
+                  <div>Lease Only</div>
+                  <span>STARTING MSRP</span><span>*</span>
+                </div>
+                <div class="stats__rating">
+                  <div>360</div>
+                  <span>CITY/HWY MPG RATING</span><span>*</span>
+                </div>
+              </div>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+            <a href="" class="vehicle__action">
+              <span class="link">EXPLORE THE CLARITY FAMILY ></span>
+
+            </a>
+          </div>
         </div>
       </div>
       <div class="vehicle__group" id="own">
         <div class="vehicle__item" style="background-image: url(./img/vehicle-21.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>PRE-OWNED 1/</span><span>1</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-21.svg" alt="">
+              </div>
+              <p>With a 182-point inspection, limited vehicle warranty with 7-year powertrain coverage and free vehicle
+                history report, our Certified Pre-Owned Vehicles are everything you can expect from a Honda and more.
+              </p>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="vehicle__group" id="future">
         <div class="vehicle__item" style="background-image: url(./img/vehicle-22.jpg);">
-        </div>
-        <div class="vehicle__item" style="background-image: url(./img/vehicle-23.jpg);">
+          <div class="item__info">
+            <div class="item__count">
+              <span>FUTURE 1/</span><span>1</span>
+            </div>
+            <div class="item__detail">
+              <div class="item__detail-logo">
+                <img src="./img/vehicle-logo-22.svg" alt="">
+              </div>
+              <p> and free vehicle history report, our Certified Pre-Owned Vehicles are everything you can expect from a
+                Honda and more. </p>
+              <div class="item__detail-action">
+                <a href=""><span>EXPLORE</span></a>
+                <a href=""><span>BUILD</span></a>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
       <button class="nextArrow" onclick="nextSlides()">
@@ -357,6 +934,9 @@
 
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+
+  <!-- SLICK  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
   <!-- MAIN JS -->
   <script src="./javascript/main.js"></script>

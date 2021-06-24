@@ -1,5 +1,39 @@
-var allSlides = document.getElementsByClassName('vehicle__item')
-var lengthSlides = allSlides.length
+/**TAB ANIMATION */
+
+let listTabs = document.getElementsByClassName('slick-slide')
+let lengTabs = listTabs.length
+let indexTab = 3
+$('.vehicle__tab').slick({
+    slidesToShow: 7,
+    responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true
+          }
+        },
+      ]
+})
+$(document).on('click', '.slick-next , .slick-prev', (event)=>{
+    if(event.target.classList.contains('slick-next')){
+        indexTab++
+        if(indexTab == lengTabs){
+            indexTab = 0
+        }
+    }else{
+        indexTab--
+        if(indexTab < 0){
+            indexTab = lengTabs - 1
+        }
+    }
+    $(listTabs[indexTab]).trigger('click')
+})
+
+/** SLIDER ANIMATION */ 
+let allSlides = document.getElementsByClassName('vehicle__item')
+let lengthSlides = allSlides.length
 
 // current index
 let index = 0
@@ -9,7 +43,7 @@ let prev = lengthSlides -1
 
 // next index
 let next = 1
-var currentGroup =  allSlides[index].parentElement.id
+let currentGroup =  allSlides[index].parentElement.id
 
 $(document).ready(function(){
     $(allSlides[lengthSlides - 1]).css({
@@ -26,8 +60,6 @@ $(document).ready(function(){
         'z-index' : 1,
         'transform': 'translateX(100%)'
     })
-    
-
     activeButton(currentGroup)
 })
 
@@ -125,3 +157,27 @@ function activeButton(button){
     }
     currentGroup = button
 }
+
+
+
+/**CHANGE IMAGE FOR SLIDES WHEN WINDOW RESPONSIVE */
+function changeImage(x) {
+    if (x.matches) { // If media query matches
+        for(var i = 0; i < lengthSlides; i++){
+            $(allSlides[i]).css({
+                "background-image":`url(./img/vehicle-responsive-${i + 1}.jpg)`
+            })
+        }
+    } else {
+        for(var i = 0; i < lengthSlides; i++){
+            $(allSlides[i]).css({
+                "background-image":`url(./img/vehicle-${i + 1}.jpg)`
+            })
+        }
+    }
+}
+  
+var x = window.matchMedia("(max-width: 768px)")
+changeImage(x) // Call listener function at run time
+x.addListener(changeImage) // Attach listener function on state changes
+
