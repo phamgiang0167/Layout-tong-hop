@@ -527,10 +527,189 @@ body {
   font-weight: 600;
 }
 
+@media screen and (max-width: 768px) {
+  .feature .feature__card button {
+    display: none;
+  }
+}
+
 .feature .feature__card:hover button {
   background-color: #fff;
   border: 1px solid #007cc0;
   color: #007cc0;
+}
+
+.discover {
+  text-align: center;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+@media screen and (max-width: 768px) {
+  .discover {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.discover .discover__title {
+  margin-top: 2rem;
+}
+
+.discover .discover__title h2 {
+  margin: auto 6rem 3rem;
+  color: #00324f;
+  font-weight: 200;
+  font-size: 7rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 768px) {
+  .discover .discover__title h2 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+}
+
+.discover .discover__title p {
+  color: #2c517c;
+  line-height: 3.5rem;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .discover .discover__title p {
+    line-height: 2rem;
+    font-size: 15px;
+    margin: auto auto 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .discover .discover__card-top .items {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+.discover .discover__card-top .items .card__img {
+  width: 100%;
+  height: 500px;
+  margin: 15px;
+  -webkit-box-shadow: 0 2px 10px 0 #888;
+          box-shadow: 0 2px 10px 0 #888;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .discover .discover__card-top .items .card__img {
+    height: 500px;
+  }
+}
+
+.discover .discover__card-top .items .card__img .card-img-top img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .discover .discover__card-top .items .card__img .card-img-top img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.discover .discover__card-top .items .card__img .card-body {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-height: 1px;
+  padding: 0 3.4rem 3.4rem;
+}
+
+.discover .discover__card-top .items .card__img .card-body h5 {
+  font-size: 1.5rem;
+  height: 60px;
+  color: #00314d;
+}
+
+.discover .discover__card-top .items .card__img .card-body p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 2rem;
+  padding: 0 2rem;
+  color: #00314d;
+}
+
+@media screen and (max-width: 768px) {
+  .discover .discover__card-top .items .card__img .card-body {
+    margin-top: 20px;
+    height: 100px;
+  }
+}
+
+.discover .discover__card-top .items .card__img a {
+  margin-bottom: 15px;
+  border-radius: 30px;
+  font-weight: 600;
+  -webkit-transition: all 0s;
+  transition: all 0s;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .discover .discover__card-top .items .card__img a {
+    padding: 1rem 8rem;
+  }
+}
+
+.discover .discover__card-top .items .card__img a:hover {
+  background-color: #fff;
+  color: #007cc0;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .discover .discover__card-top .items .card__img a:hover {
+    padding: 1rem 8rem;
+  }
+}
+
+.discover .discover-btn {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 75px;
+}
+
+.discover .discover-btn a {
+  border-radius: 30px;
+  background-color: #E42525;
+  border: 2px solid #E42525;
+  font-weight: 600;
+  -webkit-transition: all 0s;
+  transition: all 0s;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+}
+
+.discover .discover-btn a:hover {
+  background: none;
+  border: 2px solid #E42525;
+  color: #E42525;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 
 .certified {
@@ -540,7 +719,7 @@ body {
 }
 
 .certified .certified__container {
-  padding: 2rem;
+  padding: 0 4rem;
   height: 70vh;
 }
 
@@ -554,6 +733,13 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+  .certified .certified_shop,
+  .certified .certified_guides {
+    margin: 15px 0;
+  }
+}
+
 .certified .certified_shop p {
   position: absolute;
   left: 0;
@@ -564,13 +750,13 @@ body {
   font-size: 1.4rem;
 }
 
+.certified .certified_shop:hover button {
+  background: none;
+  color: #2198DC;
+}
+
 .certified button {
   position: absolute;
-  background: transparent;
-  color: #2198DC;
-  border: 0.2rem solid #2198DC;
-  border-radius: 2.5rem;
-  padding: 0.75rem 1.3rem;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -580,11 +766,11 @@ body {
   font-weight: 600;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-}
-
-.certified button:hover {
-  background: #2198DC;
-  color: white;
+  background-color: #2198DC;
+  color: #fff;
+  border: 2px solid #2198DC;
+  padding: 10px 15px;
+  border-radius: 30px;
 }
 
 .certified .certified_guides .certified_guides-text {
@@ -596,7 +782,8 @@ body {
   padding: 0 40px;
 }
 
-.certified .certified_guides .certified_guides-text p, .certified .certified_guides .certified_guides-text h3 {
+.certified .certified_guides .certified_guides-text p,
+.certified .certified_guides .certified_guides-text h3 {
   color: white;
   margin: 0 auto;
   font-size: 1.4rem;
@@ -606,5 +793,10 @@ body {
 .certified .certified_guides .certified_guides-text h3 {
   font-weight: 600;
   font-size: 1.6rem;
+}
+
+.certified .certified_guides:hover button {
+  background: none;
+  color: #2198DC;
 }
 /*# sourceMappingURL=main.css.map */
