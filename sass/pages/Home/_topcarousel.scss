@@ -1,0 +1,192 @@
+.top__carousel{
+    background-color:#00314D ;
+    @include responsive('x-small'){
+        background-color:white ;
+    }
+    .detail{
+        .title h1{
+            color: white;
+            padding-top: 390px;
+            @include responsive('medium'){
+                padding-top:340px ;
+            }
+            @include responsive('small'){
+                padding-top: 333px;
+                font-size: 2rem;
+            }
+            @include responsive(x-small){
+                padding-top: 320px;
+            }
+            
+        }
+        .title h6 {
+            color: white;
+            margin-top: 20px;
+            @include responsive('small'){
+                margin-top: 10px;
+            }
+        }
+        .title p{
+            color: white;
+            font-size: 1.5rem;
+            @include responsive('medium'){
+                font-size: 1rem;
+            }
+        }
+    }
+}
+.top__carousel{
+    .item__1,.item__2,.item__3,.item__4{
+        width: 100%;
+        background-size: cover;
+        height: 530px;
+        @include responsive('medium'){
+            height: 470px;
+        }
+        @include responsive('small'){
+            height: 430px;
+            background-size: cover;
+            
+        }
+        
+    }
+    .item__1{
+        background-image: url(../img/carousel-1.1.png);
+        @include responsive('small'){
+            background-image: url(../img/small-car1.png);
+        }
+    }
+    .item__2{
+        background-image: url(../img/carousel-1.jpg);
+        @include responsive('small'){
+            background-image: url(../img/small-car2.png);
+        }
+    }
+    .item__3{
+        background-image: url(../img/carousel-2.jpg);
+        @include responsive('small'){
+            background-image: url(../img/small-car3.jpg);
+        }
+    }
+    .item__4{
+        background-image: url(../img/carousel-3.jpg);
+        @include responsive('small'){
+            background-image: url(../img/small-car4.png);
+        }
+    }
+
+}
+
+.button_carousel{
+    @include button(#e42525,#fff,2px solid #fff,25px,10px) ;
+    font-size: 1.5rem;
+    width: 150px;
+    @include responsive('small'){
+        height: 35px;
+        padding: 6px;
+        width: 255px;
+        margin-top: 5px;
+    }
+    
+    transition: 0.5s;
+    margin-top: 10px;
+    &:hover{
+        @include button(#fff,#e42525,2px solid #fff,25px,10px);
+        @include responsive('small'){
+            height: 35px;
+            padding: 6px;
+            width: 255px;
+        }
+    }
+    
+
+}
+
+
+#stop__carousel,#play__carousel{
+    position: absolute;
+    top: 420px;
+    right: 50px;
+    height: 70px;
+    width: 70px;
+    @include responsive('medium'){
+        top: 400px;
+        right: 30px;
+        height: 60px;
+        width: 60px;
+    }
+    @include responsive('small'){
+        top: 340px;
+        right: 30px;
+        height: 50px;
+        width: 50px;
+
+    }
+    @include responsive('x-small'){
+        top: 365px;
+        right: 25px;
+        height: 45px;
+        width: 45px;
+    }
+    border-radius: 50%;
+    z-index: 50;
+    border: none;
+    background-color: #00324F;
+    i{
+        font-size: 2.5rem;
+        color: white;
+        border: 2px solid rgb(255, 0, 0);
+        border-radius: 50%;
+        padding: 20%;
+        @include responsive('medium'){
+            padding: 17%;
+        }
+        @include responsive('small'){
+            font-size: 2rem;
+            padding: 15%;
+        }
+    }
+}
+#play__carousel{
+    display: none;
+}
+
+.customNextBtn,.customPrevBtn{
+    position: absolute;
+    top: 150px;
+    @include responsive('medium'){
+        top:200px;
+    }
+    border: none;
+    z-index: 50;
+    height: 100px;
+    width: 45px;
+    @include responsive('medium'){
+        height: 70px;
+        width: 30px;
+    }
+    background-color: #e2e2e1b0;
+    i{
+        
+        font-size:4rem ;
+        @include responsive('medium'){
+            font-size: 3rem;
+        }
+        color: #00324F;
+        transition: 0.3s;
+        
+    };
+    &:hover i{
+        color: #007CC0;
+    }
+
+}
+.customNextBtn{
+    right: 0px;
+    border-radius: 10px 0 0 10px;
+    
+}
+.customPrevBtn{
+    left: 0px;
+    border-radius: 0 10px 10px 0;
+}
