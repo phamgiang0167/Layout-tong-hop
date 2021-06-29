@@ -839,11 +839,6 @@ footer .footer__policy .policy__logo .logo {
   height: 80px;
 }
 
-footer .footer__policy .policy__logo .logo svg {
-  width: 100%;
-  height: auto;
-}
-
 footer .footer__policy .policy__cookie {
   width: 50%;
 }
@@ -867,6 +862,7 @@ footer .footer__policy .policy__cookie {
   .footer__link .link__list .list__title {
     border-top: 1px solid !important;
     padding: 1.3rem 0 !important;
+    cursor: pointer;
   }
   .footer__link .link__list .list__title h3 {
     padding-bottom: 0 !important;
@@ -927,6 +923,48 @@ footer .footer__policy .policy__cookie {
     width: 100% !important;
     text-align: center;
   }
+}
+
+.btn-white {
+  background: #fff;
+  color: #E42525;
+  border: 2px solid #E42525;
+  border-radius: 1.95rem;
+  padding: 0.6rem 2.4rem 0.6rem;
+}
+
+.btn-white:hover {
+  background: #E42525;
+  color: #fff;
+  border-color: #E42525;
+}
+
+.btn-red {
+  background: #E42525;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 1.95rem;
+  padding: 0.6rem 2.4rem 0.6rem;
+}
+
+.btn-red:hover {
+  background: #fff;
+  color: #E42525;
+  border-color: #fff;
+}
+
+.btn-blue {
+  background: #2198DC;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 1.95rem;
+  padding: 0.6rem 2.4rem 0.6rem;
+}
+
+.btn-blue:hover {
+  background: #fff;
+  color: #2198DC;
+  border-color: #fff;
 }
 
 .vehicle {
@@ -1151,32 +1189,7 @@ footer .footer__policy .policy__cookie {
 }
 
 .item__info .item__detail .item__detail-action a:first-of-type {
-  background: #E42525;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 1.95rem;
-  padding: 0.6rem 2.4rem 0.6rem;
   margin-right: 0.8rem;
-}
-
-.item__info .item__detail .item__detail-action a:first-of-type:hover {
-  background: #fff;
-  color: #E42525;
-  border-color: #fff;
-}
-
-.item__info .item__detail .item__detail-action a:last-of-type {
-  background: #fff;
-  color: #E42525;
-  border: 2px solid #E42525;
-  border-radius: 1.95rem;
-  padding: 0.6rem 2.4rem 0.6rem;
-}
-
-.item__info .item__detail .item__detail-action a:last-of-type:hover {
-  background: #E42525;
-  color: #fff;
-  border-color: #E42525;
 }
 
 .item__info .vehicle__action {
@@ -1652,5 +1665,28 @@ footer .footer__policy .policy__cookie {
 .certified .certified_guides:hover button {
   background: none;
   color: #2198DC;
+}
+
+.toTop {
+  position: fixed;
+  right: 0;
+  bottom: 100px;
+  border: #007cc0;
+  background-color: #007cc0;
+  border-radius: 8px 0 0 8px;
+  height: 50px;
+  padding: 12px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  width: 50px;
+  z-index: 9997;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.toTop i {
+  display: block;
+  color: #fff;
+  font-size: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

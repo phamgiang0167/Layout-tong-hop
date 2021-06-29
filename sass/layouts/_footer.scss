@@ -158,10 +158,7 @@ footer{
             .logo{
                 width: 10.5%;
                 height: 80px;
-                svg{
-                    width: 100%;
-                    height: auto;
-                }
+                
             }
         }
         .policy__cookie{
@@ -194,6 +191,7 @@ footer{
             .list__title{
                 border-top: 1px solid !important;
                 padding: 1.3rem 0 !important;
+                cursor: pointer;
                 h3{
                     padding-bottom: 0 !important;
                     margin: 0;
