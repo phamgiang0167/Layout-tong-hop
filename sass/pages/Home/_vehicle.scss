@@ -49,6 +49,7 @@
             top:0;
             font-size: 1rem;
             cursor: pointer;
+            display: none;
         }
 
         .arrow__left{
@@ -73,6 +74,7 @@
             margin: auto 0;
             top: 0;
             bottom: 0;
+            
         }
         & .prevArrow{
             border-radius: 0 6px 6px 0;
@@ -291,6 +293,11 @@
     .vehicle__title{
         font-size: 3.6rem !important;
     }
+    .vehicle__listTab{
+        .arrow__left, .arrow__right{
+            display: block !important;
+        }
+    }
     .vehicle__list{
         height: 100vh !important;
         & .prevArrow, .nextArrow{
@@ -354,18 +361,4 @@
             }
         }
     }
-}
-
-.slick-prev:before, .slick-next:before { 
-    font-family: 'Font Awesome\ 5 Free';
-    color: black;
-    font-weight: 900;
-}
-
-.slick-prev:before{
-    content: "\f053";
-}
-
-.slick-next:before{
-    content: "\f054";
 }

@@ -31,6 +31,8 @@ $(document).on('click', '.arrow__left , .arrow__right', (event)=>{
         })
     }
 })
+/**END TAB ANIMATION */
+
 
 /** SLIDER ANIMATION */ 
 let allSlides = document.getElementsByClassName('vehicle__item')
@@ -158,27 +160,75 @@ function activeButton(button){
     }
     currentGroup = button
 }
+/**END SLIDER ANIMATION */
 
+/**ADD COLLAPSE */
+function addCollapse(){
+    let listTitle = document.getElementsByClassName('list__title')
+    for(var i = 0; i < listTitle.length; i++){
+        // add collapse
+        listTitle[i].setAttribute('data-toggle', 'collapse')
+        listTitle[i].setAttribute('href', "#list" + (i+1))
+        document.querySelector(`#list${i+1}`).classList.add("collapse")
+    }
+}
 
+function removeCollapse(){
+    let listTitle = document.getElementsByClassName('list__title')
+    for(var i = 0; i < listTitle.length; i++){
+            //remove collaspe
+        listTitle[i].removeAttribute('data-toggle')
+        listTitle[i].removeAttribute('href')
+        document.querySelector(`#list${i+1}`).classList.remove("collapse")
+        //checkbox always false before responsive
+    }
+}
 
-/**CHANGE IMAGE FOR SLIDES WHEN WINDOW RESPONSIVE */
-function changeImage(x) {
-    if (x.matches) { // If media query matches
-        for(var i = 0; i < lengthSlides; i++){
-            $(allSlides[i]).css({
-                "background-image":`url(./img/vehicle-responsive-${i + 1}.jpg)`
-            })
-        }
+/**CHANGE IMAGE VEHICLE */
+function changeImage(){
+    for(var i = 0; i < lengthSlides; i++){
+        $(allSlides[i]).css({
+            "background-image":`url(./img/vehicle-responsive-${i + 1}.jpg)`
+        })
+    }
+}
+
+function revertImage(){
+    for(var i = 0; i < lengthSlides; i++){
+        $(allSlides[i]).css({
+            "background-image":`url(./img/vehicle-${i + 1}.jpg)`
+        })
+    }
+}
+
+/**RESPONSIVE*/
+function responsive_smallDevice(x) {
+    if (x.matches) { // 768px
+       changeImage()
     } else {
-        for(var i = 0; i < lengthSlides; i++){
-            $(allSlides[i]).css({
-                "background-image":`url(./img/vehicle-${i + 1}.jpg)`
-            })
-        }
+        revertImage()
+    }
+}
+
+function responsive_largeDevice(x) {
+    if (x.matches) {
+       addCollapse()
+    } else {
+        removeCollapse()
     }
 }
   
-var x = window.matchMedia("(max-width: 768px)")
-changeImage(x) // Call listener function at run time
-x.addListener(changeImage) // Attach listener function on state changes
+var smallDevice = window.matchMedia("(max-width: 768px)")
+responsive_smallDevice(smallDevice) 
+smallDevice .addListener(responsive_smallDevice)
+
+var largeDevice = window.matchMedia("(max-width: 992px)")
+responsive_largeDevice(largeDevice)
+largeDevice .addListener(responsive_largeDevice)
+
+
+/**END RESPONSIVE */
+
+
+
 

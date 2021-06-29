@@ -2,14 +2,17 @@
 
 // background
 $bg-00: rgb(245, 245, 245);
-
+$bg-01: #F5F5F5;
 $blue-00: #00314d;
 $blue-01: #007cc0;
 $blue-02: #2198DC;
 $blue-03: #00324f;
 $blue-04: #06456a;
 $blue-05: #123A5A;
+$blue-06: #00446b;
 $red-00: #E42525;
+
+$hr-00: rgb(207, 207, 207);
 //break points
 $breakpoints: (
   'x-large': 1200px,
