@@ -10,7 +10,9 @@
 @import './components/button';
 @import './components/animation';
 // layouts
-@import './layouts/header';
+@import './layouts/header/header';
+@import './layouts/header/mobilemenu';
+@import './layouts/header/vehicles-submenu';
 @import './layouts/footer';
 
 // Pages
