@@ -6,6 +6,15 @@
     padding: $padding;
 }
 
+@mixin  controlButton($bg, $color, $border,$size, $color-hv) {
+    background: $bg;
+    color: $color;
+    border: $border;
+    font-size: $size;
+    &:hover{
+        color: $color-hv;
+    }
+}
 
 @mixin button_vehicle($bg, $color, $border, $rounded, $padding) {
     background: $bg;

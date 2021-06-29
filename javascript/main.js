@@ -1,5 +1,40 @@
-var allSlides = document.getElementsByClassName('vehicle__item')
-var lengthSlides = allSlides.length
+/**TAB ANIMATION */
+
+let listTabs = document.getElementsByClassName('tab__item')
+let lengTabs = listTabs.length
+let indexTab = 0
+$(document).on('click', '.arrow__left , .arrow__right', (event)=>{
+    if(event.target.classList.contains('arrow__right')){
+        indexTab++
+        if(indexTab == lengTabs){
+            indexTab = 0
+        }
+    }else{
+        indexTab--
+        if(indexTab < 0){
+            indexTab = lengTabs - 1
+        }
+    }
+    $(listTabs[indexTab]).trigger('click')
+
+    if(indexTab < lengTabs - 2){
+        listTabs[indexTab].scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: "center"
+        })
+    }else{
+        listTabs[indexTab].scrollIntoView({
+            behavior: "smooth",
+            block: "end",
+            inline: "end"
+        })
+    }
+})
+
+/** SLIDER ANIMATION */ 
+let allSlides = document.getElementsByClassName('vehicle__item')
+let lengthSlides = allSlides.length
 
 // current index
 let index = 0
@@ -9,7 +44,7 @@ let prev = lengthSlides -1
 
 // next index
 let next = 1
-var currentGroup =  allSlides[index].parentElement.id
+let currentGroup =  allSlides[index].parentElement.id
 
 $(document).ready(function(){
     $(allSlides[lengthSlides - 1]).css({
@@ -26,8 +61,6 @@ $(document).ready(function(){
         'z-index' : 1,
         'transform': 'translateX(100%)'
     })
-    
-
     activeButton(currentGroup)
 })
 
@@ -125,3 +158,27 @@ function activeButton(button){
     }
     currentGroup = button
 }
+
+
+
+/**CHANGE IMAGE FOR SLIDES WHEN WINDOW RESPONSIVE */
+function changeImage(x) {
+    if (x.matches) { // If media query matches
+        for(var i = 0; i < lengthSlides; i++){
+            $(allSlides[i]).css({
+                "background-image":`url(./img/vehicle-responsive-${i + 1}.jpg)`
+            })
+        }
+    } else {
+        for(var i = 0; i < lengthSlides; i++){
+            $(allSlides[i]).css({
+                "background-image":`url(./img/vehicle-${i + 1}.jpg)`
+            })
+        }
+    }
+}
+  
+var x = window.matchMedia("(max-width: 768px)")
+changeImage(x) // Call listener function at run time
+x.addListener(changeImage) // Attach listener function on state changes
+
