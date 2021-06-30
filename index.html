@@ -17,6 +17,22 @@
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
+  
+  <!-- OWL CAROUSEL -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <style>
+    .owl-theme .owl-dots .owl-dot.active span,
+    .owl-theme .owl-dots .owl-dot:hover span {
+      background: #007CC0;
+    }
+  </style>
+
+
+
   <!-- SLICK  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
@@ -26,10 +42,841 @@
 </head>
 
 <body>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-xl  sticky-top">
+
+      <a class="navbar-branch" href="#">
+        LOGO
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobilenav">
+        <span class="navbar-toggler-icon"><i class="fas fa-map-marker-alt" style="margin-right: 20px;"></i> <i class="fas fa-bars" style="padding-right: 20px;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto pr-0 ">
+          <li class="nav-item px-3 py-2 hvr-sweep-to-bottom  " id="li-vehicles">
+            <a class="nav-link" href="#" type="button" data-toggle="collapse" data-target="#vehicles-submenu">
+              <p>VEHICLES<i class="fas fa-chevron-down" id="icon-vehicles"></i></p>
+            </a>
+  
+          </li>
+          <li class="nav-item px-3 py-2 hvr-sweep-to-bottom dropdown " id="li-shopping">
+  
+            <a class="nav-link " type="button" data-toggle="dropdown">
+              <p>SHOPPING TOOLS <i class="fas fa-chevron-down" id="icon-shopping"></i></p>
+  
+            </a>
+            <div class="dropdown-menu" id="shopping-submenu">
+              <div class="container text-center">
+                <ul class="shopping_item">
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-tools"></i>
+                      <h5>Buil & Price</h5>
+                    </a>
+                  </li>
+                  <div class="separator"></div>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-tag"></i>
+                      <h5>See Offers</h5>
+                    </a>
+                  </li>
+                  <div class="separator"></div>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-search"></i>
+                      <h5>Search Inventory</h5>
+                    </a>
+                  </li>
+                  <div class="separator"></div>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-calculator"></i>
+                      <h5>Estimate payment</h5>
+                    </a>
+                  </li>
+                  <div class="separator"></div>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-taxi"></i>
+                      <h5>Buy Online</h5>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="container px-5 text-center">
+                <ul class="shopping_text">
+                  <li><a href="#">Trade-in Value <i class="fas fa-external-link-alt"></i></a></li>
+                  <li><a href="#">Honda Financial Services <i class="fas fa-external-link-alt"></i></a></li>
+                  <li><a href="#">Buyer's Guide <i class="fas fa-external-link-alt"></i></a></li>
+                  <li><a href="#">Apply for Financing <i class="fas fa-external-link-alt"></i></a></li>
+                </ul>
+              </div>
+  
+            </div>
+  
+          </li>
+          <li class="nav-item px-3 py-2 hvr-sweep-to-bottom dropdown" id="li-owner">
+            <a class="nav-link" href="#" type="button" data-toggle="dropdown">
+              <p>Owners<i class="fas fa-chevron-down" id="icon-owner"></i></p>
+  
+            </a>
+            <div class="dropdown-menu" id="owner-submenu">
+              <div class="container">
+                <ul class="owner_list_1">
+                  <li><a href=""><span>Owners Site</span> <i class="fas fa-external-link-alt"></i></a></li>
+                  <li><a href=""><span>Owner's Manual & Warranties</span> <i class="fas fa-external-link-alt"></i></a>
+                  </li>
+                  <li><a href=""><span>Schedule Service</span> <i class="fas fa-external-link-alt"></i></a></li>
+                  <li><a href=""><span>Shop Parts & Accessoriese</span> <i class="fas fa-external-link-alt"></i></a></li>
+                  <li><a href=""><span>Certified Body Shop Locator</span> <i class="fas fa-external-link-alt"></i></a>
+                  </li>
+                </ul>
+                <ul class="owner_list_2">
+                  <li><a href=""><span>Roadside Assistance</span> <i class="fas fa-external-link-alt"></i></a></li>
+                  <li><a href=""><span>Pay My Bill</span> <i class="fas fa-external-link-alt"></i></a></li>
+                  <li><a href=""><span>Recalls</span> <i class="fas fa-external-link-alt"></i></a></li>
+                  <li><a href=""><span>Customer Service</span> </a></li>
+  
+                </ul>
+  
+              </div>
+            </div>
+          </li>
+          <li class="nav-item px-3 py-2 hvr-sweep-to-bottom dropdown" id="li-explore">
+            <a class="nav-link" href="#" type="button" data-toggle="dropdown">
+              <p>Explore<i class="fas fa-chevron-down" id="icon-explore"></i></p>
+  
+            </a>
+            <div class="dropdown-menu" id="explore-submenu">
+              <div class="container px-5 py-4">
+                <ul class="explore_list">
+                  <li><a href="#"><span>Honda Safety</span></a></li>
+                  <li><a href="#"><span>Honda Sensing®</span></a></li>
+                  <li><a href="#"><span>Rugged Capability</span></a></li>
+                  <li><a href="#"><span>Electrified Vehicles</span></a></li>
+                  <li><a href="#"><span>News & Events</span></a></li>
+                  <li><a href="#"><span>Honda Racing</span><i class="fas fa-external-link-alt"></i></a></li>
+                  <li><a href="#"><span>Honda in the Community</span><i class="fas fa-external-link-alt"></i></a></li>
+                  <li><a href="#"><span>Honda on Inclusion and Diversity</span><i
+                        class="fas fa-external-link-alt"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item px-3 py-2 hvr-sweep-to-bottom">
+            <a class="nav-link" href="#">
+              <p>Find a Dealer</p>
+  
+            </a>
+          </li>
+          <li class="nav-item px-3 py-2 hvr-sweep-to-bottom">
+            <a class="nav-link" href="#">
+              <p>ENGlISH</p>
+            </a>
+          </li>
+          <li class="nav-item px-3 py-2 hvr-sweep-to-bottom">
+            <a class="nav-link" href="#">
+              <p>LOCATION<i class="fas fa-map-marker-alt"></i></p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+  
+    <!-- collapse Vehicles-submenu -->
+  
+    <div class="collapse vehicles-submenu" id="vehicles-submenu">
+      <div class="container-fluid taskbar">
+        <div class="px-5 container bar text-center">
+          <div class="row">
+            <div class="col-xl-2"><a href="#SUV">SUV$CROSSOVER</a></div>
+            <div class="col-xl-2"><a href="#Sedan">CAR</a></div>
+            <div class="col-xl-2"><a href="#Truck">MINIVANS & TRUCK</a></div>
+            <div class="col-xl-2"><a href="#Elec">ELECTRIFIED</a></div>
+            <div class="col-xl-2"><a href="#Future">FUTURE</a></div>
+            <div class="col-xl-2"><a href="#Pre-owned">PRE-OWNED</a></div>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="container-fluid vehicle">
+        <div class="px-4 container-fluid SUV " id="SUV">
+          <h4>SUVS & CROSSOVERS</h4>
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top" src="./img/suv1.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button ">
+                    <div class="row">
+                      <div class="col-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-6"><button class="button-1">BUILD</button></div>
+                    </div>
+  
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top" src="./img/suv2.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-6"><button class="button-1">BUILD</button></div>
+                    </div>
+  
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top" src="./img/suv3.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-6"><button class="button-1">BUILD</button></div>
+                    </div>
+  
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top" src="./img/suv4.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-6"><button class="button-1">BUILD</button></div>
+                    </div>
+  
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top" src="./img/suv5.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-6"><button class="button-1">BUILD</button></div>
+                    </div>
+  
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+  
+  
+  
+          </div>
+        </div>
+        <div class="px-4 container-fluid Sedan " id="Sedan">
+          <h4>CARS - Sedan</h4>
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top" src="./img/sedan1.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-6"><button class="button-1">BUILD</button></div>
+                    </div>
+  
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top" src="./img/sendan2.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-6"><button class="button-1">BUILD</button></div>
+                    </div>
+  
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top" src="./img/sedan3.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-6"><button class="button-1">BUILD</button></div>
+                    </div>
+  
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top" src="./img/sedan4.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-6"><button class="button-1">BUILD</button></div>
+                    </div>
+  
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top" src="./img/sedan5.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-6"><button class="button-1">BUILD</button></div>
+                    </div>
+  
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+  
+  
+  
+          </div>
+        </div>
+        <div class="px-4 container-fluid Hatchbacks ">
+          <h4>CARS - Hatchbacks</h4>
+          <div class="row">
+            <div class="col-xl-2">
+              <div class="card">
+                <img class="card-img-top" src="./img/hatch1.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-6"><button class="button-1">BUILD</button></div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 ml-5">
+              <div class="card">
+                <img class="card-img-top" src="./img/hatch2.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-xl-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-xl-6"><button class="button-1">BUILD</button></div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="px-4 container-fluid MINIVAN-TRUCK " id="Truck">
+          <h4>MINIVAN & TRUCK</h4>
+          <div class="row">
+            <div class="col-xl-2">
+              <div class="card">
+                <img class="card-img-top" src="./img/truck1.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-6"><button class="button-1">BUILD</button></div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 ml-5">
+              <div class="card">
+                <img class="card-img-top" src="./img/truck2.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-xl-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-xl-6"><button class="button-1">BUILD</button></div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="px-4 container-fluid ELECTRIFIED " id="Elec">
+          <h4>ELECTRIFIED</h4>
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top" src="./img/elec1.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-6"><button class="button-1">BUILD</button></div>
+                    </div>
+  
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top" src="./img/elec2.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-6"><button class="button-1">BUILD</button></div>
+                    </div>
+  
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top" src="./img/elec3.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-6"><button class="button-1">BUILD</button></div>
+                    </div>
+  
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top" src="./img/elec4.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-6"><button class="button-1">BUILD</button></div>
+                    </div>
+  
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top" src="./img/elec5.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h5 class="card-title">HR-V</h5>
+                  <hr>
+                  <p class="card-price">$21,220 <span class="unit">STARTING MSRP*</span></p>
+                  <p class="card-city">28/34 <span class="unit">CITY/HWY MPG RTG*</span></p>
+                  <div class="container bot-button">
+                    <div class="row">
+                      <div class="col-6"><button class="button-1">EXPLORE</button></div>
+                      <div class="col-6"><button class="button-1">BUILD</button></div>
+                    </div>
+  
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+  
+  
+  
+          </div>
+        </div>
+  
+        <div class="px-4 container-fluid FUTURE " id="Future">
+          <h4>FUTURE</h4>
+          <div class="container-fluid future-content">
+            <div class="py-4 container text-center">
+              <div class="row">
+                <div class="col-xl-3">
+                  <img class="future-logo" src="./img/MY22-Apollo2-Badge-Future-Vehicle-WHITE.png" alt="">
+                  <p class="future-text">Tune in on June 23 for the global debut.</p>
+                  <button class="button-2" id="future-button">LEARN MORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+        <div class="px-4 container-fluid PRE-OWNED " id="Pre-owned">
+          <h4>PRE-OWNED</h4>
+          <div class="container-fluid owned-content">
+            <div class="py-5 container text-center">
+              <div class="row">
+                <div class="col-xl-3">
+                  <img class="owned-logo" src="./img/HCPV_logo.png" alt="">
+  
+                  <button class="button-2" id="owned-button">SHOP CERTIFIED</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+    <!--collapse Mobile menu  -->
+  
+    <div class="collapse mobile__nav" id="mobilenav">
+      <ul class=" menubar_lv1" id="main">
+        <li onclick="openVehi()" class="vehicles_lv1">
+          <a href="#">VEHICLES<i class="fas fa-chevron-right"></i></a>
+        </li>
+        <hr>
+        <li onclick="openShop()" class="shopping_lv1">
+          <a href="#">SHOPPING TOOLS<i class="fas fa-chevron-right"></i></a>
+        </li>
+        <hr>
+        <li onclick="openOwn()" class="owners_lv1">
+          <a href="#">OWNERS<i class="fas fa-chevron-right"></i></a>
+        </li>
+        <hr>
+        <li onclick="openExpl()" class="explore_lv1">
+          <a href="#">EXPLORE<i class="fas fa-chevron-right"></i></a>
+        </li>
+        <hr>
+        <li class="dealer_lv1">
+          <a href="#">FIND A DEALER</a>
+        </li>
+        <hr>
+        <li class="language_lv1">
+          <a href="#">LANGUAGE
+            <div class="btn-language">
+              <button class="lang_1">ENGLISH</button>
+              <button class="lang_2">ESPANOL</button>
+            </div>
+  
+          </a>
+        </li>
+  
+        <div class="search-form">
+          <form id="search-bar-form" class="nested-button" role="search" action="/search">
+            <input type="text" name="s" placeholder="Search for anything Honda" aria-hidden="true" tabindex="-1"
+              >
+            <i class="mi-search" aria-hidden="true"></i>
+            <button class="btn_search" aria-hidden="true" tabindex="-1"
+              style="display: block;">GO</button>
+          </form>
+        </div>
+      </ul>
+      <!-- VEHICLES LV2 -->
+      <ul class="vehicles_lv2" id="vehi_lv2">
+        <li class="back-to-menu" onclick="closeVehi()"><i class="fas fa-chevron-left"></i>
+          <h5>VEHICLES</h5>
+        </li>
+        <li><a href="">SUV & CROSSOVERS</a></li>
+        <hr>
+        <li><a href="">CARS </a></li>
+        <hr>
+        <li><a href="">MINIVAN & TRUCK</a></li>
+        <hr>
+        <li><a href="">ELECTRIFIED</a></li>
+        <hr>
+        <li><a href="">FUTURE</a></li>
+        <hr>
+        <li><a href="">PRE-OWNED</a></li>
+      </ul>
+      <!-- SHOPPING TOOL LV2 -->
+      <ul class="shopping_lv2" id="shop_lv2">
+        <li class="back-to-menu" onclick="closeShop()"><i class="fas fa-chevron-left"></i>
+          <h5>SHOPPING TOOLS</h5>
+        </li>
+        <li><a href="">Build & Price</a></li>
+        <hr>
+        <li><a href="">See Offers </a></li>
+        <hr>
+        <li><a href="">Search Inventory</a></li>
+        <hr>
+        <li><a href="">Estimate Payments</a></li>
+        <hr>
+        <li><a href="">Buy Online</a></li>
+        <hr>
+        <li><a href="">Trade-In Value</a></li>
+        <hr>
+        <li><a href="">Honda Finacial Services</a></li>
+        <hr>
+        <li><a href="">Buyer's Guide</a></li>
+        <hr>
+        <li><a href="">Apply For Financing</a></li>
+        <hr>
+      </ul>
+      <!-- OWNERS LV2 -->
+      <ul class="owners_lv2" id="own_lv2">
+        <li class="back-to-menu" onclick="closeOwn()"><i class="fas fa-chevron-left"></i>
+          <h5>OWNERS</h5>
+        </li>
+        <li><a href="">Owners Site</a></li>
+        <hr>
+        <li><a href="">Owner's Manual & Warranties </a></li>
+        <hr>
+        <li><a href="">Schedule Service</a></li>
+        <hr>
+        <li><a href="">Shop Parts & Accessories</a></li>
+        <hr>
+        <li><a href="">Certified Body Shop Locator</a></li>
+        <hr>
+        <li><a href="">Roadside Assistance</a></li>
+        <hr>
+        <li><a href="">Pay My Bill</a></li>
+        <hr>
+        <li><a href="">Recall</a></li>
+        <hr>
+        <li><a href="">Customer Service</a></li>
+        <hr>
+      </ul>
+      <!-- EXPLORE LV2 -->
+      <ul class="explore_lv2" id="expl_lv2">
+        <li class="back-to-menu" onclick="closeExpl()"><i class="fas fa-chevron-left"></i>
+          <h5>EXPLORE</h5>
+        </li>
+        <li><a href="">Honda Safety</a></li>
+        <li><a href="">Honda Sensing</a></li>
+        <li><a href="">Rugged Capability</a></li>
+        <li><a href="">Electrified Vehicles</a></li>
+        <li><a href="">News & Event</a></li>
+        <li><a href="">Honda Racing</a></li>
+        <li><a href="">Honda in the Community</a></li>
+        <li><a href="">Honda on Inclusion and Diversity</a></li>
+      </ul>
+    </div>
+  
+  
+  
+  
+    <!-- NAVBAR END -->
+
+
+    <!-- Top Carousel -->
+     <!-- TOP CAROUSEL -->
+     <section class="top__carousel owl-carousel owl-theme">
+      <div class="detail">
+        <div class="item__1">
+          <div class="container text-center">
+            <div class="title ">
+              <h1>Start something fun in the all-new Civic Sedan</h1>
+              <button class="button_carousel">LEARN MORE</button>
+              <h6>Sport Shown in Aegean Metallic</h6>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="detail">
+        <div class="item__2">
+          <div class="container text-center">
+            <div class="title ">
+              <h1>Get into a new Honda at 0% APR</h1>
+              <button class="button_carousel">SEE OFFERS</button>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="detail">
+        <div class="item__3">
+          <div class="container text-center">
+            <div class="title ">
+              <h1>Get into a new Honda at 0% APR</h1>
+              <p>Don’t miss Majid Jordan’s remix of H.E.R.’s Civic Tour concert, and enter the Honda Civic Tour
+                Sweepstakes</p>
+              <button class="button_carousel">LEARN MORE</button>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="detail">
+        <div class="item__4">
+          <div class="container text-center">
+            <div class="title ">
+              <h1>Get into a new Honda at 0% APR</h1>
+              <button class="button_carousel">LEARN MORE</button>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </section>
+    <div class="top_carousel_control">
+      <button onclick="stop()" id="stop__carousel" class="stop"><i class="fas fa-pause"></i></button>
+      <button onclick="play()" id="play__carousel" class="play"><i class="fas fa-play"></i></button>
+      <button class="customNextBtn"><i class="fas fa-chevron-right"></i></button>
+      <button class="customPrevBtn"><i class="fas fa-chevron-left"></i></button>
+    </div>
+
+    <!-- Top Carousel END -->
+
+    <!-- BANNER -->
+    <section class="banner">
+      <div class="banner_detail">
+        <div class="banner_bg"></div>
+        <div class="container-fluid padding px-5 banner_content">
+          <div class="banner_area">
+            <div class="banner__1  text-center" id="banner_1">
+              <h3>Revealed:The All-New 2022 Civic Hatchback</h3>
+              <button>LEARN MORE</button>
+            </div> 
+            <!-- <div class="separator">col-12 col-md-6 col-xl-6</div> -->
+            <div class="banner__2 pl-3" id="banner_2">
+              <h3>Modern design in a family-friendly package.</h3>
+              <button>EXPLORE</button>
+            </div> 
+          </div>
+          
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- BANNER END -->
+
+  <section class="vehicle">
+
   <button class="toTop" href="">
     <i class="fas fa-arrow-up"></i>
   </button>
   <section class="vehicle" >
+
     <div class="vehicle__title">Our Vehicles</div>
     <div class="vehicle__listTab">
       <div class="vehicle__tab">
@@ -951,6 +1798,9 @@
 
   </section>
 
+
+
+=======
   <footer>
     <div class="footer__logo">
       <a href="">
@@ -1251,6 +2101,7 @@
         advertising. To find out more, read our <a>Cookie Policy</a>.</p>
     </div>
   </footer>
+
   <!-- JQUERY -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -1261,6 +2112,18 @@
 
   <!-- SLICK  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <!-- OWL CAROUSEL -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  
+  <!-- MENU JS -->
+  <script src="./javascript/menu.js"></script>
+  <!-- TOP CAROUSEL JS -->
+  <script src="./javascript/owl-carousel.js"></script>
+  <!-- Menu mobile -->
+  <script src="./javascript/mobile-menu.js"></script>
+
 
   <!-- MAIN JS -->
   <script src="./javascript/main.js"></script>

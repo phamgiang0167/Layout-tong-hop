@@ -1,5 +1,7 @@
 /* VEHICLES */
-$('#vehicles-submenu').on('show.bs.collapse', function () {
+
+$('#vehicles-submenu').on('shown.bs.collapse', function () {
+
     var y = document.getElementById("icon-vehicles");
     var x = document.getElementById("body-page");
     y.classList.replace("fa-chevron-down", "fa-chevron-up");
@@ -7,7 +9,9 @@ $('#vehicles-submenu').on('show.bs.collapse', function () {
 
 })
 
-$('#vehicles-submenu').on('hide.bs.collapse', function () {
+
+$('#vehicles-submenu').on('hidden.bs.collapse', function () {
+
     var y = document.getElementById("icon-vehicles");
     var x = document.getElementById("body-page");
     y.classList.replace("fa-chevron-up", "fa-chevron-down");
