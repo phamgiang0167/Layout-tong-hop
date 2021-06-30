@@ -9,8 +9,11 @@
 // components
 @import './components/button';
 @import './components/animation';
+@import './components/sweeptobottom';
 // layouts
-@import './layouts/header';
+@import './layouts/header/header';
+@import './layouts/header/vehicles-submenu';
+@import './layouts/header/mobilemenu';
 @import './layouts/footer';
 
 // Pages
@@ -19,4 +22,5 @@
 @import './pages/Home/vehicle';
 @import './pages/Home/feature';
 @import './pages/Home/discover';
-@import './pages/Home/certified'
+@import './pages/Home/certified';
+@import './pages/Home//topcarousel';

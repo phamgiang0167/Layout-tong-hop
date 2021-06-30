@@ -1,0 +1,151 @@
+
+.vehicles_lv2,.shopping_lv2,
+.owners_lv2, .explore_lv2{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color:#EEEEEE ;
+    overflow-x: hidden;
+    transition: 0.35s;
+    padding-top: 60px;
+}
+.back-to-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-top: -3px;
+    h5{
+        margin:  0 auto;
+        color: #007CC0;
+        font-size: 2rem;
+
+    }
+    i{
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+.menubar_lv1{
+    height: 200%;
+    background-color:#EEEEEE ;
+}
+#mobilenav hr{
+    width: 95%;
+    margin: 0 auto;
+}
+#mobilenav li{
+    list-style: none;
+    padding: 10px 0 10px 30px;
+}
+#mobilenav a{
+    text-decoration: none;
+    color: #003273;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+.menubar_lv1 a i{
+    margin-right: 30px;
+}
+
+
+
+/* Search-form */
+.menubar_lv1{
+    .language_lv1{
+        margin-bottom: 10%;
+        a{
+            .btn-language{
+                margin-right: 50px;
+                @include responsive('small'){
+                    margin-right: 25px
+                }
+                .lang_1{
+                    @include button($blue-01,white,2px solid $blue-01,30px,0);
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    transition: 0.5s;
+                    height: 40px;
+                    width: 150px;
+                    margin-right: 50px;
+                    @include responsive('small'){
+                        font-size: 1rem;
+                        width: 100px;
+                        height: 30px;
+                        margin-right: 25px;
+                    }
+
+                }
+                .lang_1:hover{
+                    background-color: white;
+                    color:$blue-01 ;
+                }
+                .lang_2{
+                    @include button(white,$blue-01,2px solid $blue-01,30px,0);
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    transition: 0.5s;
+                    height: 40px;
+                    width: 150px;
+                    @include responsive('small'){
+                        font-size: 1rem;
+                        width: 100px;
+                        height: 30px;
+                        
+                    }
+                }
+                .lang_2:hover{
+                    color: white;
+                    background-color:$blue-01 ;
+                }
+            }
+        }
+        
+    }
+    .search-form{
+
+        padding-bottom: 25%;
+        width: 70%;
+        margin: 0 auto;
+        #search-bar-form{
+            display: flex;
+            align-items: center;
+            input{
+                box-shadow: 10px 0 10px 0 solid black;
+                border: none;
+                width: 90%;
+                height:45px ;
+                border-radius: 20px;
+                &::placeholder{
+                    color:#007CC0;
+                    font-size: 1.7rem;
+                    padding-left: 20px;
+                }
+            }
+            button{
+                font-size: 2rem;
+                width: 60px;
+                height: 40px;
+                border-radius: 20px;
+                border: none;
+                background-color: #007CC0;
+                color: white;
+                margin-left: -62px;
+                
+            }
+            
+        }
+        
+    }
+}
