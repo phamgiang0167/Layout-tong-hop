@@ -5,7 +5,10 @@ $('#mobilenav').on('shown.bs.collapse', function () {
 
 
 })
+
 $('#mobilenav').on('hidden.bs.collapse', function () {
+
+
     var x = document.getElementById("body-page");
 
     x.style.display = "block";

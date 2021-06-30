@@ -1,4 +1,14 @@
-
+.btn{
+    &-white{
+        @include button_vehicle(#fff, $red-00 , 2px solid $red-00 , 1.95rem, .6rem 2.4rem .6rem);
+    }
+    &-red{
+        @include button_vehicle($red-00, #fff, 2px solid #fff, 1.95rem, .6rem 2.4rem .6rem);
+    }
+    &-blue{
+        @include button_vehicle($blue-02, #fff, 2px solid #fff, 1.95rem, .6rem 2.4rem .6rem);
+    }
+}
 
 .vehicle{
     width: 100%;
@@ -49,6 +59,7 @@
             top:0;
             font-size: 1rem;
             cursor: pointer;
+            display: none;
         }
 
         .arrow__left{
@@ -73,6 +84,7 @@
             margin: auto 0;
             top: 0;
             bottom: 0;
+            
         }
         & .prevArrow{
             border-radius: 0 6px 6px 0;
@@ -188,11 +200,7 @@
                 flex: 1;
                 transition: all 0.5s;
                 &:first-of-type{
-                    @include button_vehicle($red-00, #fff, 2px solid #fff, 1.95rem, .6rem 2.4rem .6rem);
                     margin-right: 0.8rem;
-                }
-                &:last-of-type{
-                    @include button_vehicle(#fff, $red-00 , 2px solid $red-00 , 1.95rem, .6rem 2.4rem .6rem);
                 }
             }
         }
@@ -291,6 +299,11 @@
     .vehicle__title{
         font-size: 3.6rem !important;
     }
+    .vehicle__listTab{
+        .arrow__left, .arrow__right{
+            display: block !important;
+        }
+    }
     .vehicle__list{
         height: 100vh !important;
         & .prevArrow, .nextArrow{
@@ -354,18 +367,4 @@
             }
         }
     }
-}
-
-.slick-prev:before, .slick-next:before { 
-    font-family: 'Font Awesome\ 5 Free';
-    color: black;
-    font-weight: 900;
-}
-
-.slick-prev:before{
-    content: "\f053";
-}
-
-.slick-next:before{
-    content: "\f054";
 }
