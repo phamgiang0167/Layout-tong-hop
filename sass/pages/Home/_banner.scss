@@ -1,0 +1,90 @@
+.banner_detail{
+    background-color: #F5F5F5;
+
+
+    .banner_bg{
+        background-color: #00324F;
+        height: 150px;
+        @include responsive('small'){
+            background-color:#F5F5F5 ;
+        }
+    }   
+    
+    .banner_content{
+        width: 100%;
+        height: 320px;
+        position: relative;
+        @include responsive('small'){
+            height: 620px;
+        }
+        .banner_area{
+            display: flex;
+            justify-content: space-between;
+            margin-top: -120px;
+            
+            @include responsive('small'){
+                display: block;
+                margin-top: -150px;
+            }
+        }
+        .separator{
+            width: 0px;
+        }
+        
+        #banner_1{
+            width: 48%;
+            background-image: url(../img/banner-1.png);
+            background-size: cover;
+            height: 300px;
+            @include responsive('small'){
+                width: 100%;
+                margin-bottom: 20px;
+                box-shadow:  0 0 10px 1px black;
+            }
+            h3{
+                padding-top: 200px;
+                color: white;
+            }
+            button{
+                margin-top: 10px;
+                @include button(#007CC0,white,2px solid #007CC0,20px,0);
+                width: 100px;
+                height: 30px;
+                font-size: 1rem;
+                transform: 0.3s;
+            }
+            &:hover button{
+                background-color: white;
+                color:#007CC0 ;
+                
+            }
+        }
+        #banner_2{
+            width: 48%;
+            background-image: url(../img/banner-2.png);
+            background-size: cover;
+            height: 300px;
+            @include responsive('small'){
+                width: 100%;
+                box-shadow:  0 0 10px 1px black;
+            }
+            h3{
+                padding-top: 100px;
+                color: white;
+            }
+            button{
+                margin-top: 10px;
+                @include button(white,#007CC0,2px solid #007CC0,20px,0);
+                width: 100px;
+                height: 30px;
+                font-size: 1rem;
+                transform: 0.3s;
+            }
+            &:hover button{
+                background-color:#007CC0 ;
+                color: white;
+            }
+        }
+
+    }
+}
