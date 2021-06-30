@@ -1,9 +1,6 @@
 .top__carousel{
     background-color:#00314D ;
-
-    @include responsive('small'){
-
-
+    @include responsive('x-small'){
         background-color:white ;
     }
     .detail{
