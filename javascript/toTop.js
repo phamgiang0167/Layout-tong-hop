@@ -8,3 +8,9 @@ $(window).scroll(function (event) {
   }
   lastScrollTop = st;
 });
+
+let toTopBtn = document.getElementsByClassName('toTop')
+toTopBtn[0].addEventListener('click', ()=>{
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+})

@@ -10,6 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 [class*='col-'] {
@@ -2123,6 +2124,8 @@ footer .footer__policy .policy__cookie {
   z-index: 9997;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
 }
 
 .toTop i {
